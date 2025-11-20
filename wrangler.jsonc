@@ -5,8 +5,7 @@
 
   // Flags necessárias para Node.js e APIs modernas
   "compatibility_flags": [
-    "nodejs_compat",
-    "http_serve"
+    "nodejs_compat"
   ],
 
   // Usar o diretório atual como container de assets
