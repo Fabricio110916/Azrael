@@ -1,6 +1,8 @@
 {
   "name": "cloudflare-proxy",
   "main": "src/index.ts",
+  "compatibility_date": "2025-11-20",
+
   "compatibility_flags": [
     "nodejs_compat",
     "http_serve"
@@ -11,14 +13,14 @@
     "binding": "container"
   },
 
+  "observability": {
+    "enabled": true
+  },
+
   "routes": [
     {
       "pattern": "yalis.pp.ua/*",
       "zone_id": "711c1d1a30f2714a86fe387c42989b65"
     }
-  ],
-
-  "observability": {
-    "enabled": true
-  }
+  ]
 }
