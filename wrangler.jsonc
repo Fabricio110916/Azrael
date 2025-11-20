@@ -3,20 +3,24 @@
   "main": "src/index.ts",
   "compatibility_date": "2025-11-20",
 
+  // Flags necessárias para Node.js e APIs modernas
   "compatibility_flags": [
     "nodejs_compat",
     "http_serve"
   ],
 
+  // Usar o diretório atual como container de assets
   "assets": {
     "directory": "./",
     "binding": "container"
   },
 
+  // Observabilidade ativa
   "observability": {
     "enabled": true
   },
 
+  // Rotas do Worker
   "routes": [
     {
       "pattern": "yalis.pp.ua/*",
