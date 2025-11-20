@@ -1,0 +1,24 @@
+{
+  "name": "cloudflare-proxy",
+  "main": "src/index.ts",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "http_serve"
+  ],
+
+  "assets": {
+    "directory": "./",
+    "binding": "container"
+  },
+
+  "routes": [
+    {
+      "pattern": "yalis.pp.ua/*",
+      "zone_id": "711c1d1a30f2714a86fe387c42989b65"
+    }
+  ],
+
+  "observability": {
+    "enabled": true
+  }
+}
